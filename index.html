@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="calculator-container">
+    <div class="calculator-form">
+        <h2>Mortgage Calculator</h2>
+        <button id="clearAll">Clear All</button>
+        <label for="amount">Mortgage Amount</label>
+        <input type="number" id="amount" placeholder="£" min="0" step="1">
+        
+        <label for="term">Mortgage Term</label>
+        <div class="input-group">
+            <input type="number" id="term" value="25" min="1" step="1">
+            <span>years</span>
+        </div>
+        
+        <label for="rate">Interest Rate</label>
+        <div class="input-group">
+            <input type="number" id="rate" value="5.25" step="0.01" min="0">
+            <span>%</span>
+        </div>
+        
+        <label>Mortgage Type</label>
+        <div class="radio-group">
+            <label>
+                <input type="radio" name="mortgageType" value="repayment" checked>
+                Repayment
+            </label>
+            <label>
+                <input type="radio" name="mortgageType" value="interest-only">
+                Interest Only
+            </label>
+        </div>
+        
+        <button id="calculate" class="calculate-btn">Calculate Repayments</button>
+    </div>
+    <div class="calculator-results">
+        <h2>Results shown here</h2>
+        <p id="results-text">Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+    </div>
+    
+</div>
+ 
+<script src="./script.js"></script>
+
+</body>
+</html>
